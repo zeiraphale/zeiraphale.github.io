@@ -6,12 +6,11 @@ $(document).ready(function () {
 		$('.video').simpleLightboxVideo();
 	}
 
-	/*ScrollUp*/
 	if (!!$.prototype.scrollUp) {
 		$.scrollUp();
 	}
 
-	/*Responsive Navigation*/
+	
 	$("#nav-mobile").html($("#nav-main").html());
 	$("#nav-trigger span").on("click",function() {
 		if ($("nav#nav-mobile ul").hasClass("expanded")) {
@@ -48,7 +47,7 @@ $(document).ready(function () {
 });
 
 
-/* Preloader and animations */
+
 $(window).load(function () { // makes sure the whole site is loaded
 	$('#status').fadeOut(); // will first fade out the loading animation
 	$('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
@@ -59,7 +58,7 @@ $(window).load(function () { // makes sure the whole site is loaded
 		new WOW().init();
 	}
 
-	/* Parallax Effects */
+	
 	if (!!$.prototype.enllax) {
 		$(window).enllax();
 	}
